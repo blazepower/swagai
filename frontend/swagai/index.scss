@@ -1,0 +1,13 @@
+$primary-color: #a01a7d;
+$secondary-color: #ec4067;
+
+#root {
+  width: 100vw;
+}
+//by default no element should have any padding or margin
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif; //every element has this font
+}

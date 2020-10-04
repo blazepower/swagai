@@ -1,0 +1,166 @@
+$primary-color: #a01a7d;
+$secondary-color: #ec4067;
+$tertiary-color: #c62d72;
+
+///
+.navbar {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  height: 6rem;
+  border: none;
+  #basic-nav-dropdown {
+    padding-right: 6rem; //space out buttons
+    margin: 0;
+    z-index: 100;
+  }
+  .nav-buttons {
+    //the div containing all non dropdown buttons (on right side) is 5rem away from the right side
+    margin-right: 10rem;
+  }
+  #basic-nav-dropdown {
+    color: black;
+  }
+
+  .upload-button {
+    margin-left: 4rem;
+  }
+  .signin-button {
+    margin-right: 4rem;
+  }
+  #nav-button {
+    outline: none;
+    //this id is applied to the text of buttons that are not dropdowns
+    text-decoration: none;
+    color: black;
+    border: 2px;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 3rem;
+    padding: 0.5rem;
+    transition: all ease 0.4s;
+    transition-property: color, border;
+
+    &:hover {
+      border: 1px solid $primary-color;
+      color: $primary-color;
+    }
+    .navbar-collapse {
+      background: white;
+    }
+  }
+}
+.navbar-div {
+  #hamburger-menu {
+    //if we dont make background white and change z index then we will see the gradient line when we open the hamburger icon
+    background-color: white;
+    z-index: 100;
+  }
+}
+.dropdown-menus {
+  //center the dropdown between swagai logo and rightside buttons that are not dropdowns
+  margin: 0 auto;
+  .dropdown-link {
+    color: black;
+    text-decoration: none;
+    outline: none;
+    transition: 0.2s ease;
+    &:hover {
+      background: rgba(white, 0.1);
+      color: $primary-color;
+    }
+  }
+}
+
+.title {
+  //swagai logo
+  margin-left: 10rem;
+  font-size: 2rem;
+  color: black;
+}
+#gradient-line {
+  display: inline-block;
+  position: absolute;
+  background: linear-gradient(to right, $secondary-color, $primary-color);
+  width: 100vw;
+  height: 3px;
+  border: none;
+}
+
+// Medium devices (tablets, less than 992px)
+//theres a specific width range where nav buttons look ugly, this fixes it by making the dropdown smaller and giving more room to the nav buttons that arent dropdown buttons
+@media (max-width: 1350px) and (min-width: 992px) {
+  .navbar {
+    #basic-nav-dropdown {
+      font-size: 1rem;
+    }
+    #nav-button {
+      font-size: 0.6rem;
+    }
+  }
+}
+//this media query is applicable when we have a hamburger menu. these styles just help the hamburger menu dropdown look better
+@media (max-width: 1190px) {
+  .title {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .navbar {
+    #nav-button {
+      padding: 0;
+      margin: 0.7rem;
+      border: none;
+      &:hover {
+        color: $tertiary-color;
+        border: none;
+      }
+    }
+    #basic-nav-dropdown {
+      margin: 0.7rem;
+      padding: 0;
+      font-size: 0.8rem;
+    }
+  }
+  .navbar-div {
+    #hamburger-menu {
+      padding: 1rem;
+      color: white;
+      border-width: 3px;
+      border-style: solid;
+      border-image: linear-gradient(to bottom, $primary-color, $tertiary-color)
+        1 1 1 1 100%;
+      border-color: $tertiary-color;
+    }
+  }
+}
+
+//deprecated code from before we restyled navbar
+// @keyframes animate {
+//   0% {
+//     transform: translateY(1%);
+//   }
+//   10% {
+//     transform: translateY(2%);
+//   }
+//   20% {
+//     transform: translateY(3%);
+//   }
+//   30% {
+//     transform: translateY(4%);
+//   }
+//   40% {
+//     transform: translateY(5%);
+//   }
+//   50% {
+//     transform: translateY(6%);
+//   }
+//   70% {
+//     transform: translateY(8%);
+//   }
+//   90% {
+//     transform: translateY(9%);
+//   }
+//   100% {
+//     transform: translateY(10%);
+//   }
+// }

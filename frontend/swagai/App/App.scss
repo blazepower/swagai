@@ -1,0 +1,43 @@
+$primary-color: #dd45d3;
+$secondary-color: #fd9d52;
+$tertiary-color:#b13cff;
+///
+
+//by default no element should have any padding or margin
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif; //every element has this font
+}
+
+@media screen and (min-width: 1700px) {
+  .final-container {
+    width: 75vw;
+    margin: 0 auto;
+  }
+  .navbar-div {
+    width: 75vw;
+    margin: 0 auto;
+    nav {
+      width: 75vw;
+      margin: 0 auto;
+    }
+    #gradient-line {
+      width: 100vw;
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+  }
+  .mission-statement-box {
+    position: relative;
+    margin: 0 auto;
+    width: 75vw;
+    .get-started-box {
+      position: absolute;
+      width: 75vw;
+      top: 0;
+    }
+  } 
+}

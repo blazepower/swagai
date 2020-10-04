@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (min-width: 1700px) {
+  .final-container {
+    width: 75vw;
+    margin: 0 auto;
+  }
+
+  .navbar-div {
+    width: 75vw;
+    margin: 0 auto;
+  }
+  .navbar-div nav {
+    width: 75vw;
+    margin: 0 auto;
+  }
+  .navbar-div #gradient-line {
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  .mission-statement-box {
+    position: relative;
+    margin: 0 auto;
+    width: 75vw;
+  }
+  .mission-statement-box .get-started-box {
+    position: absolute;
+    width: 75vw;
+    top: 0;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */

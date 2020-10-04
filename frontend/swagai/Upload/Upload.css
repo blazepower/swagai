@@ -1,0 +1,42 @@
+.file-input-form {
+  background: linear-gradient(to top, #b13cff, #fd9d52);
+  width: 25rem;
+  height: 35rem;
+  margin-left: 10rem;
+  margin-top: 6rem;
+  border-radius: 2rem;
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.upload-label {
+  display: inline;
+  color: white;
+  text-align: center;
+  display: block;
+}
+.upload-label p {
+  display: inline-block;
+  padding-top: 10rem;
+}
+.upload-label input {
+  padding-left: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.submit-button {
+  color: white;
+  background: none;
+  border: 2px solid white;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+.submit-button:hover {
+  color: #dd45d3;
+  background: white;
+}
+
+/*# sourceMappingURL=Upload.css.map */

@@ -1,0 +1,61 @@
+#content-div {
+  width: 95%;
+  margin: 4rem auto;
+  height: 35vh;
+}
+
+.individual-topic-title {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.tabs {
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.tabs #uncontrolled-tab-example-tab-summary {
+  color: #a11b7d;
+  margin: 0 2rem;
+}
+.tabs #uncontrolled-tab-example-tab-videos {
+  color: #b32378;
+  margin: 0 2rem;
+}
+.tabs #uncontrolled-tab-example-tab-practice {
+  color: #c62d72;
+  margin: 0 2rem;
+}
+
+.summary-div {
+  margin: 2rem 5rem;
+  text-align: center;
+}
+.summary-div p {
+  font-size: 1.2rem;
+  line-height: 3rem;
+}
+.summary-div p h2 {
+  display: inline-block;
+  margin: 2rem 0;
+}
+
+.video-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.problems {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+iframe {
+  width: 25rem;
+  height: 15rem;
+  margin: 1rem;
+}
+
+/*# sourceMappingURL=Algebra.css.map */

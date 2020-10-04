@@ -1,0 +1,44 @@
+$primary-color: #dd45d3;
+$secondary-color: #fd9d52;
+$tertiary-color:#b13cff;
+///
+
+.file-input-form {
+  background: linear-gradient(to top,$tertiary-color, $secondary-color);
+  width: 25rem;
+  height: 35rem;
+  margin-left: 10rem;
+  margin-top: 6rem;
+  border-radius: 2rem;
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.upload-label {
+  p {
+    display: inline-block;
+    padding-top: 10rem;
+  }
+  display: inline;
+  color: white;
+  text-align: center;
+  display: block;
+  input {
+    padding-left: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+  }
+}
+.submit-button {
+  color: white;
+  background: none;
+  border: 2px solid white;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: 0.5s ease;
+  &:hover {
+    color: $primary-color;
+    background: white;
+  }
+}

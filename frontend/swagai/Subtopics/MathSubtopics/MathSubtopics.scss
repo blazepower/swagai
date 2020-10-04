@@ -1,0 +1,103 @@
+$primary-color: #a01a7d;
+$secondary-color: #ec4067;
+$tertiary-color: #c62d72;
+
+.topic-title {
+  font-size: 2rem;
+  display: inline-block;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 5rem;
+  padding: 0;
+  font-size: 2.5em;
+}
+
+//topic tilt cards
+.subtopics {
+  background-color: rgba($color: #e2e8f0, $alpha: 0.4);
+  padding-top: 2em;
+  padding-bottom: 2em;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  cursor: pointer;
+  .algebra-button {
+    text-decoration: none;
+  }
+  .Algebra {
+    color: white;
+    display: flex; //center text
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    margin: 2rem;
+    height: 20rem;
+    width: 25rem;
+    background-image: linear-gradient(15deg, #30cfd0 0%, #330867 100%);
+    .Algebra-inner {
+      font-size: 4em;
+    }
+  }
+
+  .Statistics {
+    color: white;
+
+    display: flex; //center text
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+
+    border-radius: 2em;
+
+    height: 20rem;
+    width: 25rem;
+    background-image: linear-gradient(15deg, #30cfd0 0%, #330867 100%);
+    .Statistics-inner {
+      font-size: 4em;
+    }
+  }
+
+  .Calculus {
+    color: white;
+
+    display: flex; //center text
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+
+    border-radius: 2em;
+
+    height: 20rem;
+    width: 25rem;
+    background-image: linear-gradient(15deg, #30cfd0 0%, #330867 100%);
+    .Calculus-inner {
+      font-size: 4em;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .subtopics {
+    .Algebra {
+      height: 10rem;
+      width: 15rem;
+      .Algebra-inner {
+        font-size: 2.5rem;
+      }
+    }
+    .Calculus {
+      height: 10rem;
+      width: 15rem;
+      .Calculus-inner {
+        font-size: 2.5rem;
+      }
+    }
+    .Statistics {
+      height: 10rem;
+      width: 15rem;
+      .Statistics-inner {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}

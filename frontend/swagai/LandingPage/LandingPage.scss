@@ -1,0 +1,190 @@
+$primary-color: #dd45d3;
+$secondary-color: #fd9d52;
+$tertiary-color:#b13cff;
+
+///
+
+.mission-statement-box {
+  position: absolute;
+  top: 6rem;
+  width: 100vw;
+
+  h1 {
+    //mission statement
+    font-size: 2rem;
+    display: inline-block;
+    margin-top: 3.2em;
+    margin-left: 5rem;
+    padding: 0;
+    font-size: 2.5em;
+  }
+  h2 {
+    //mission statement caption
+    margin-left: 5rem;
+
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: normal;
+    padding: 0;
+    margin-top: 1rem;
+  }
+
+  .get-started {
+    background-image: linear-gradient(
+      to right,
+      $tertiary-color 10%,
+      $primary-color 50%,
+      $secondary-color 
+    );
+    left: 80%;
+    border-radius: 3rem;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 5rem;
+    top: 9rem;
+    text-decoration: none;
+    z-index: 1;
+    //you cant normally  change the gradient with a smooth transition, so the code below is a workaround to change the gradient smoothly
+    &:before {
+      border-radius: 3rem;
+      text-decoration: none;
+
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(
+        to right,
+        $secondary-color,
+        $tertiary-color,
+        $primary-color
+      );
+      z-index: -1;
+      transition: all 0.5s linear;
+      opacity: 0;
+    }
+    &:hover::before {
+      opacity: 1;
+      box-shadow: 0px 15px 20px lightgray;
+    }
+  }
+}
+
+//position arrows of carousel
+.slick-prev {
+  left: 3% !important;
+  z-index: 1000;
+}
+.slick-next {
+  right: 3% !important;
+  z-index: 1000;
+}
+
+.topic-display {
+  margin-top: 23em;
+  margin-bottom: 40em;
+  background: white;
+  padding: 0;
+  padding-bottom: 4em;
+  background: linear-gradient(
+    120deg,
+    $secondary-color,
+    $primary-color,
+    $tertiary-color 90%
+   
+    
+  );
+  .slide {
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    .unit {
+      outline: none;
+      text-decoration: none;
+    }
+    img {
+      background: white;
+      margin: auto;
+      margin-top: 50px;
+      border: 5px solid $primary-color;
+      border-radius: 50px;
+      padding: 5px;
+      transition: 0.8s ease;
+    }
+    .caption {
+      font-weight: bolder;
+      margin: 35px 0 25px 0;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+    }
+    &:hover {
+      img {
+        box-shadow: 0px 10px 15px rgba($color: black, $alpha: 0.3);
+        transform: translateY(8px);
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  //scaling for phones
+  .mission-statement-box {
+    h1 {
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+    .topic-display {
+      margin-top: 10rem;
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  .topic-display {
+    margin-top: 15rem;
+  }
+  .mission-statement-box {
+    //center mission statement
+    position: relative;
+    padding: 0;
+    width: 90%;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    h1 {
+      //center h1
+      margin: 0 auto 1rem auto;
+      padding: 0;
+      text-align: center;
+    }
+    h2 {
+      //center h2
+      padding: 0;
+      margin: 0 auto 1rem auto;
+      text-align: center;
+    }
+    .get-started {
+      padding: 0;
+      margin: 0;
+      left: 0;
+      top: 0;
+      right: 0;
+      width: 10rem;
+      transform: translateX(-50%);
+      text-align: center;
+      padding: 1rem;
+    }
+    .get-started-box {
+      //center button
+      text-align: center;
+      width: 100%;
+      transform: translateX(50%);
+      margin-top: 3rem;
+    }
+  }
+}

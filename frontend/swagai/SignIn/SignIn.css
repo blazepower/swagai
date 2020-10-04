@@ -1,0 +1,100 @@
+.signin-form {
+  width: 450px;
+  margin: 6rem auto;
+  margin-top: 16rem;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  background: white;
+  border-radius: 4em;
+  z-index: 0;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.signin-background {
+  position: absolute;
+  top: 6rem;
+  width: 100vw;
+  height: 110vh;
+  background: linear-gradient(to bottom, #fd9d52, #dd45d3);
+  z-index: -10;
+}
+
+.username,
+.password {
+  margin: 1rem;
+  margin-bottom: 4px;
+  display: block;
+  text-align: center;
+}
+
+.username-input,
+.password-input {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 1rem 0;
+  margin-top: 0px;
+  display: inline-block;
+  border: none;
+  background: rgba(204, 204, 204, 0.4);
+  border-radius: 15px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.pass-div,
+.user-div {
+  margin: 0.5em auto 0 auto;
+  text-align: center;
+}
+
+.login {
+  background-color: black;
+  display: inline-block;
+  color: white;
+  margin-top: 3em;
+  padding: 1em;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  transition: 0.8s ease;
+  border-radius: 25px;
+  outline: none;
+  text-align: center;
+}
+
+.login-div {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.login:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding: 16px 0;
+}
+
+.form-div {
+  text-align: center;
+}
+
+.final-container {
+  width: 100vw;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 450px) {
+  .signin-form {
+    margin: 5rem auto;
+    scale: 65%;
+  }
+
+  .form-div {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=SignIn.css.map */
